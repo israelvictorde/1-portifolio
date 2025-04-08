@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(42, 41, 41);
+    color: white;
+}
+
+h1{
+    color: white;
+    text-align: justify;
+}
+strong{
+    color: red;
+}
+
+#mercado{
+    color: yellow;
+}
+
+#universidade{
+    color: yellow;
+}
+
+id.tecnico{
+    color: pink;
+}
+
+button {
+    background-color: red; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 50px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro */
+    margin: 5px; /* Espaçamento entre os botões */
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espaço entre o texto e a imagem */
+}
+p {
+    line-height: 1; /* Sem espaçamento adicional */
+}
+h2{
+    color: white;
+    text-align: justify;
+}
