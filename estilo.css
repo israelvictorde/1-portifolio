@@ -5,18 +5,22 @@ body {
 
 h1{
     color: white;
-    text-align: justify;
+    text-align: justify contend;
+}
+ul{
+    color: white;
+    text-align: justify contend;
 }
 strong{
-    color: red;
+    color: rgb(209, 49, 49);
 }
 
 #mercado{
-    color: yellow;
+    color: rgb(205, 205, 56);
 }
 
 #universidade{
-    color: yellow;
+    color: rgb(205, 205, 56);
 }
 
 id.tecnico{
@@ -24,7 +28,7 @@ id.tecnico{
 }
 
 button {
-    background-color: red; /* Cor de fundo */
+    background-color: rgb(209, 49, 49); /* Cor de fundo */
     color: black; /* Cor do texto */
     border: none; /* Remove a borda */
     border-radius: 50px; /* Bordas arredondadas */
@@ -40,7 +44,7 @@ button {
 p {
     line-height: 1; /* Sem espaçamento adicional */
 }
-h2{
+h2 {
     color: white;
     text-align: justify;
 }
