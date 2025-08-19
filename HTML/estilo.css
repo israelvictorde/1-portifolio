@@ -1,0 +1,342 @@
+body {
+    background-color: #2a2929;
+    color: #f8f8f8;
+    margin: 0;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+
+    line-height: 1.6;
+    width: 100%; /* Garante que o body ocupe toda a largura */
+}
+
+h1 {
+    color: #f8f8f8;
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    word-break: break-word; /* Quebra palavras longas para evitar overflow */
+}
+
+h1 strong {
+    color: #d13131;
+    font-weight: bold;
+}
+
+h2 {
+    color: #f0f0f0;
+    text-align: left;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.3em;
+    word-break: break-word; /* Quebra palavras longas para evitar overflow */
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    word-break: break-word; /* Quebra palavras longas para evitar overflow */
+}
+
+ul {
+    color: #f8f8f8;
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+    word-break: break-word; /* Quebra palavras longas para evitar overflow */
+}
+
+strong {
+    color: #d13131;
+}
+
+#mercado {
+    color: #e5e54f;
+    font-weight: bold;
+}
+
+#universidade {
+    color: #e5e54f;
+    font-weight: bold;
+}
+
+button {
+    background-color: #d13131;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    word-break: keep-all; /* Evita quebras de linha dentro do texto do botão */
+}
+
+button:hover {
+    background-color: #b82727;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1200px; /* Largura máxima para telas maiores */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+    justify-content: center;
+    width: 95%; /* Garante que não ultrapasse a largura da tela em margens */
+}
+
+.image-container {
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    width: 40%; /* Largura relativa */
+    min-width: 200px; /* Largura mínima para evitar que fique muito pequeno */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    width: 60%; /* Largura relativa */
+    min-width: 300px; /* Largura mínima para evitar que fique muito estreito */
+}
+
+.menu-bar {
+    background-color: #343333;
+    color: #f8f8f8;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Garante que o menu ocupe toda a largura */
+}
+
+.menu-title {
+    margin-right: auto;
+    font-size: 1.2em;
+    word-break: keep-all; /* Evita quebras de linha no título do menu */
+}
+
+.menu-item {
+    position: relative;
+    word-break: keep-all; /* Evita quebras de linha nos itens do menu */
+}
+
+.menu-item button {
+    background: none;
+    color: #f8f8f8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    word-break: keep-all; /* Evita quebras de linha no texto do botão do menu */
+}
+
+.menu-item button:hover {
+    color: #d13131;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #343333;
+    border: 1px solid #555;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* Evita quebras de linha nos links do submenu */
+}
+
+.submenu a {
+    display: block;
+    color: #f8f8f8;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.2s ease;
+    word-break: keep-all; /* Evita quebras de linha nos links do submenu */
+}
+
+.submenu a:hover {
+    background-color: #444;
+}
+
+.social-buttons-inline form {
+    display: inline;
+    margin-right: 5px;
+}
+
+.social-buttons-inline button {
+    background-color: #d13131;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: opacity 0.2s ease;
+    word-break: keep-all; /* Evita quebras de linha nos botões de redes sociais */
+}
+
+.social-buttons-inline button:hover {
+    opacity: 0.8;
+}
+
+.academic-buttons-inline form {
+    display: inline;
+    margin-right: 5px;
+}
+
+.academic-buttons-inline button {
+    background-color: #e5e54f;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: opacity 0.2s ease;
+    word-break: keep-all; /* Evita quebras de linha nos botões acadêmicos */
+}
+
+.academic-buttons-inline button:hover {
+    opacity: 0.8;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os itens do menu quebrem em telas menores */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+}
+
+.info-area {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #343333;
+    white-space: pre-wrap;
+    font-size: 0.95em;
+    word-break: break-word; /* Quebra palavras longas na área de informações */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se o conteúdo for muito longo */
+    min-width: 100%; /* Garante que a área ocupe a largura do container */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os botões quebrem em telas menores */
+    width: 100%; /* Garante que o container ocupe a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+.container-botoes {
+    display: inline-block;
+    margin-top: 10px; /* Adicionei um pouco de margem para separação vertical */
+    margin-right: 10px;
+    word-break: keep-all; /* Evita quebras de linha nos botões */
+}
+
+/* Estilos específicos para os botões de informação */
+/* Estilos para a área "Sobre mim" */
+#sobre-mim-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    text-align: left;
+    overflow-x: auto;
+    /* max-width: 100%; REMOVA ou COMENTE esta linha */
+    width: 80%; /* ATUALIZAÇÃO: Define a largura para 80% do pai */
+    margin: 0 auto; /* Opcional: centraliza o elemento horizontalmente */
+    box-sizing: border-box;
+}
+
+#sobre-mim-info > p {
+    margin-bottom: 0;
+    padding-right: 15px;
+    border-right: 2px solid #555;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#sobre-mim-info > p:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+#Habilidades-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: left;
+    overflow-x: auto;
+    /* max-width: 100%; REMOVA ou COMENTE esta linha */
+    width: 80%; /* ATUALIZAÇÃO: Define a largura para 80% do pai */
+    margin: 0 auto; /* Opcional: centraliza o elemento horizontalmente */
+    box-sizing: border-box;
+}
+
+#Habilidades-info > p {
+    margin-bottom: 0;
+    padding-right: 15px;
+    border-right: 2px solid #555;
+    white-space: nowrap;
+    max-width: fit-content;
+    box-sizing: border-box;
+}
+
+#Habilidades-info > p:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.text-content > div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que o texto e os botões quebrem */
+    width: 100%; /* Garante que o container ocupe a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+.text-content > div.container > p {
+    flex-grow: 1;
+    margin-bottom: 0;
+    word-break: break-word; /* Quebra palavras longas no resumo */
+}
